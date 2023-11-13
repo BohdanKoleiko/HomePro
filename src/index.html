@@ -1,21 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>HomePro</title>
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>HomePro</title>
 
-   <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-   <header class="header"></header>
+      <link rel="stylesheet" href="css/style.min.css" />
+   </head>
+   <body style="overflow: hidden">
+      <header class="header">
+         <div class="container">
+            <div class="header__wrapper">
+               <div class="header__logo">
+                  <figure class="logo">
+                     <a href="#">
+                        <img src="images/main_logo.png" alt="main logo" />
+                     </a>
+                  </figure>
+               </div>
 
-   <main>
-      
-   </main>
+               <nav class="header__menu" data-active="">
+                  <div class="header__menu-top">
+                     <div class="header__menu-logo">
+                        <figure class="logo">
+                           <a href="#">
+                              <img src="images/main_logo.png" alt="main logo" />
+                           </a>
+                        </figure>
+                     </div>
+                     <div class="header__menu-close" data-active="">
+                        <svg
+                           xmlns="http://www.w3.org/2000/svg"
+                           viewBox="0 0 24 24"
+                           fill="none"
+                        >
+                           <path
+                              d="M18 6L6 18"
+                              stroke="white"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                           />
+                           <path
+                              d="M6 6L18 18"
+                              stroke="white"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                           />
+                        </svg>
+                     </div>
+                  </div>
 
-   <footer class="footer"></footer>
+                  <ul class="header__links">
+                     <li><a href="">Services</a></li>
+                     <li><a href="">About Us</a></li>
+                     <li><a href="">Our Blog</a></li>
+                     <li><a href="">Contact</a></li>
+                  </ul>
 
-   <script src="js/main.js"></script>
-</body>
+                  <div class="header__service-schedule">24 Hour Services</div>
+               </nav>
+
+               <div class="burger" data-active="">
+                  <svg
+                     xmlns="http://www.w3.org/2000/svg"
+                     viewBox="0 0 25 24"
+                     fill="none"
+                  >
+                     <path
+                        d="M3.76367 6H21.7637"
+                        stroke="white"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                     />
+                     <g class="burger__animated-cross">
+                        <path
+                           d="M3.76367 12H21.7637"
+                           stroke="white"
+                           stroke-width="2"
+                           stroke-linecap="round"
+                           stroke-linejoin="round"
+                           class="burger__animated-cross-right"
+                        />
+                        <path
+                           d="M3.76367 12H21.7637"
+                           stroke="white"
+                           stroke-width="2"
+                           stroke-linecap="round"
+                           stroke-linejoin="round"
+                           class="burger__animated-cross-left"
+                        />
+                     </g>
+                     <path
+                        d="M3.76367 18H21.7637"
+                        stroke="white"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                     />
+                  </svg>
+               </div>
+            </div>
+         </div>
+      </header>
+
+      <main>@@include('pages/hero.html')</main>
+
+      <footer class="footer"></footer>
+
+      <script src="js/script.js" type="module"></script>
+   </body>
 </html>
