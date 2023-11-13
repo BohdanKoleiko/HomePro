@@ -1,4 +1,10 @@
-* {
+@import "base/fonts";
+@import "base/color-presets";
+@import "base/variables";
+
+*,
+::after,
+::before {
    box-sizing: border-box;
    padding: 0;
    margin: 0;
@@ -6,10 +12,32 @@
 
 a {
    text-decoration: none;
+   color: inherit;
 }
 
 li {
    list-style-type: none;
 }
 
+img {
+   display: block;
+   height: auto;
+   max-width: 100%;
+}
+
+[class~="container"] {
+   max-width: 1640px;
+   margin: 0 auto;
+   padding: 0 20px;
+}
+
+html,
+body {
+   font-family: $fontFamily;
+   font-size: 18px;
+   line-height: 28px;
+   background-color: var(--color-bg-light);
+}
+
 @import "header/header";
+@import "hero/hero";
