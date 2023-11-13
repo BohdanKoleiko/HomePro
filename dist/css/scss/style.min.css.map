@@ -1,1 +1,0 @@
-{"version":3,"sources":["scss/style.scss"],"names":[],"mappings":"AAAA,EACG,WAAA,WACA,QAAA,EACA,OAAA,EAGH,EACG,gBAAA,KAGH,GACG,gBAAA","file":"style.min.css","sourcesContent":["* {\n   box-sizing: border-box;\n   padding: 0;\n   margin: 0;\n}\n\na {\n   text-decoration: none;\n}\n\nli {\n   list-style-type: none;\n}\n\n@import \"header/header\";\n"]}
