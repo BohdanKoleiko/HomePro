@@ -2,6 +2,7 @@
    position: fixed;
    top: 0;
    left: 0;
+   z-index: 1;
    width: 100%;
    background-color: var(--color-bg-blue);
 
@@ -28,7 +29,7 @@
    &__menu {
       display: flex;
       justify-content: space-between;
-      flex-grow: 1.198;
+      flex-grow: 1;
       margin-left: 20px;
 
       @media screen and (max-width: 1024px) {
@@ -142,34 +143,6 @@
    width: 24px;
    height: 24px;
    cursor: pointer;
-
-   //svg path {
-   //   transition: all 0.2s linear;
-   //}
-
-   //&[data-active="true"] {
-   //   svg > path:first-child,
-   //   svg > path:last-child {
-   //      opacity: 0;
-   //   }
-
-   //   svg > path:first-child {
-   //      transform: translateY(6px);
-   //   }
-
-   //   svg > path:last-child {
-   //      transform: translateY(-6px);
-   //   }
-
-   //   .burger__animated-cross {
-   //      &-right {
-   //         transform: rotate(45deg) translate(4.5px, -12px);
-   //      }
-   //      &-left {
-   //         transform: rotate(-45deg) translate(-12.5px, 5px);
-   //      }
-   //   }
-   //}
 
    @media screen and (max-width: 1024px) {
       display: block;
