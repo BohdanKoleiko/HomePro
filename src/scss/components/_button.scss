@@ -1,0 +1,47 @@
+.btn {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   width: 100%;
+   border-radius: 60px;
+   font-size: 24px;
+   font-weight: 700;
+   line-height: 133.333%;
+
+   padding: 8px;
+
+   //remove default styles
+   border: 0;
+
+   &__txt {
+      padding: 8px 16px;
+   }
+
+   &__img {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      border-radius: 100%;
+      padding: 12px;
+      width: 100%;
+      height: 100%;
+      max-width: 48px;
+      max-height: 48px;
+      min-width: 32px;
+      min-height: 32px;
+
+      background-color: var(--color-bg-light);
+   }
+
+   &_blue {
+      color: var(--color-txt-100);
+      background-color: var(--color-bg-blue-100);
+   }
+
+   &_white {
+      color: var(--color-txt-450);
+      background-color: var(--color-bg-light);
+   }
+}
