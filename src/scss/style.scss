@@ -8,6 +8,7 @@
    box-sizing: border-box;
    padding: 0;
    margin: 0;
+   font-family: $fontFamily;
 }
 
 a {
@@ -33,11 +34,13 @@ img {
 
 html,
 body {
-   font-family: $fontFamily;
    font-size: 18px;
    line-height: 28px;
    background-color: var(--color-bg-light);
 }
 
+@import "./components/button";
+@import "./components/list-check";
+@import "./components/hightlights";
 @import "header/header";
 @import "hero/hero";
